@@ -36,7 +36,7 @@
 </div>
 
 <div class="sign-out-container">
-    <a href="index1.php" class="btn btn-danger">
+    <a href="index.php" class="btn btn-danger">
         <i class="fas fa-sign-out-alt"></i> 
     </a>
 </div>
