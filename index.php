@@ -54,7 +54,7 @@
           <div class="collapse navbar-collapse" id="mynavbar">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                      <a class="nav-link active" href="index1.php" style="color: #BACD92;">Home</a>
+                      <a class="nav-link active" href="index.php" style="color: #BACD92;">Home</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="book.php">Book</a>
