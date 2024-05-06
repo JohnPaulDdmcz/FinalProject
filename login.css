@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sedan', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    background: linear-gradient(to right, #e2e2e2, #BACD92);
+}
+
+.container {
+    background: #fff;
+    width: 450px;
+    padding: 1.5rem;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 1, 0.9);
+}
+
+form {
+    margin: 0 2rem;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+
+.input-group {
+    padding: 1% 0;
+    position: relative;
+}
+
+.input-group i {
+    position: absolute;
+    color: black;
+}
+
+input {
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding-left: 1.5rem;
+    font-size: 15px;
+    transition: background-color 0.3s, border-bottom-color 0.3s;
+}
+
+input:focus {
+    background-color: transparent;
+    outline: none;
+    border-bottom: 2px solid #BACD92;
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+label {
+    color: #757575;
+    position: relative;
+    left: 1.2em;
+    top: -1.3em;
+    cursor: auto;
+    transition: 0.3s ease all;
+}
+
+input:focus~label,
+input:not(:placeholder-shown)~label {
+    top: -3em;
+    color: #BACD92;
+    font-size: 15px;
+}
+
+
+.btn-logout {
+    background-color: #DC3545;
+}
+
+.btn-logout:hover {
+    background-color: #C82333;
+}

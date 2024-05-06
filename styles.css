@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Ms+Madi&family=Sedan:ital@0;1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: Sedan;
+
+}
+section{
+  
+  place-items: center;
+}
+/*Navbar Start*/
+
+/*position: fixed;*/
+#logo {
+  margin-bottom: 5px;
+}
+
+/* Optional styles for the logo image */
+#logo img {
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensures the image is properly centered */
+}
+.navbar-toggler span{
+color: black;
+}
+.navbar-nav{
+margin-left:50%;
+}
+.nav-item .nav-link{
+font-size: 16px;
+font-weight: 550;
+color: black;
+ letter-spacing: 2px;
+ border-radius: 3px;
+ transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+color: #BACD92;
+}
+.bg-custom {
+  background-color: #f9f9f9;
+}
+
+/*Navbar End*/
+
+/*home section start*/
+.home{
+width: 100%;
+height: 90%;
+background-image:LINEAR-GRADIENT(RGBA(0,0,0,0.6),RGBA(0,0,0,0.0)),URL("./images/img13.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+.home .content{
+
+text-align: center;
+padding-top:  200px;
+
+}
+.home .content h5{
+color: white;
+font-size: 40px;
+font-weight: 800;
+text-shadow: 0px 1px 1px black;
+font-style:normal;
+}
+
+.home .content h1{
+
+color: white;
+font-size: 70px;
+font-weight: 600;
+text-shadow: 0px 1px 1px black;
+margin-top: 5px;
+}
+
+.home .changecontent {
+  text-transform: capitalize;
+  color: #BACD92;
+}
+
+/*.changecontent::after{
+content: 'Place';
+color: #1fa0ff;
+font-weight: 1000;
+text-shadow: 0px 1px 1px black;
+animation: changetext 10s infinite linear;
+}
+@keyframes changetext {
+0% { content: "Luxury"; }
+16.666% { content: "Adventure"; }
+33.333% { content: "Relaxation"; }
+50% { content: "Rejuvenation"; }
+66.666% { content: "Serenity"; }
+83.333% { content: "Beauty"; }
+}*/
+.home .content p{
+color: white;
+font-size: 20px;
+font-weight: 600;
+text-shadow: 0px 1px 1px black;
+margin-bottom: 30px;
+margin-top: 5px;
+}
+.home .content a{
+padding: 10px;
+background: #BACD92;
+color: white;
+letter-spacing: 2px;
+font-weight: 550;
+border-radius: 20px;
+text-decoration: none;
+transition: 0.5s;
+
+}
+.home .content a:hover{
+background: white;
+color:#BACD92;
+}
+@media (max-width:850px){
+  .home{
+    background-position:50%;
+  }
+  }
+  @media(max-width:450px){
+  .home .content h5{
+    font-size: 30px;
+  }
+  .home .content h1{
+    font-size: 25px;
+  }
+  .home .content p{
+    font-size: 15px;
+  }
+  
+  }
+
+/*home section end*/
+
+
+
+
+/*Section packages Start*/
+
+.main-txt h1{
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+  color: #BACD92
+}
+.packages .card{
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgb(0,0,0,0.1)0px 4px 12px;
+  transition: transform 0.3s ease;
+}
+/*.packages .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}*/
+.packages .card img{
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+.packages .card img:hover {
+  transform: scale(1.05);
+}
+.packages .card .card-body{
+  background: transparent;
+}
+.packages .card .card-body h3{
+  font-size: 25px;
+  font-weight: 600;
+}
+.packages .card .card-body p{
+  font-size: 15px;
+}
+.checked{
+  color: #BACD92;
+}
+.star i{
+  font-size: 15px;
+}
+.packages .card .card-body h6{
+  font-size: 20px;
+}
+.packages .card .card-body a {
+  padding: 10px;
+  text-decoration: none;
+  background: #BACD92;
+  color: white;
+  border-radius: 5px;
+  border-color: #BACD92;
+}
+.packages .custom-btn-width:hover{
+  width: 180px;
+}
+.packages .custom-btn-width {
+  width: 170px; /* Set button width to 100% of its container */
+  
+}
+
+/*Section packages end*/
+
+/*Section amenities start*/
+.amenities{
+  background:#f9f9f9;
+  margin-top: 50px;
+  
+
+}
+.amenities .card{
+  box-shadow: rgb(0,0,0,0.1) 0px 4px 12px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+.amenities  .card:hover {
+  transform: translateY(-5px); /* Move card up slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+.amenities .card i{
+  font-size: 80px;
+  text-align: center;
+  color: #BACD92;
+  margin-top: 20px;
+
+}
+.amenities .card.card-body h3{
+  font-weight: 600;
+}
+.amenities .card .card-body{
+  text-align: center;
+}
+/*Section amenities end*/
+
+/*Section Gallery start*/
+
+.gallery .c-item {
+  height: 480px;
+}
+
+.gallery .c-img {
+  height: 100%;
+
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+/*Section Gallery start*/
+
+
+/*about start*/
+.about{
+  padding: 10px;
+  margin-top: 30px;
+  background: #f9f9f9;
+}
+.about .card{
+  border-radius: 10px;
+}
+.about .card img{
+  border-radius: 10px;
+}
+.about h2{
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.about p{
+  font-weight: 500;
+}
+#about-btn{
+  width: 150px;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  background: #BACD92;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 550;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#about-btn:hover{
+  width: 170px;
+}
+@media(max-width:765px){
+  .about{
+      padding: 0;
+  }
+}
+/*about end*/
+
+/*footer start*/
+#footer{
+  
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: #000000;
+  
+}
+#footer h1{
+  font-weight: 600;
+  padding-top: 30px;
+  text-shadow: 0px 0px 1px black;
+}
+#footer p{
+  text-indent: 0px;
+  margin: 50px;
+}
+#footer h1 span{
+  color: #BACD92;
+}
+.social-links{
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 60px;
+  background: black;
+  color:white;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.social-links i:hover{
+  background: #BACD92;
+}
+/*footer end*/
+
+/* Button start*/
+button#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #BACD92;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  
+  }
+  
+  button#scrollToTopBtn:hover {
+  background-color: whitesmoke;
+  color: black;
+  }
+  
+  /* Button end */
+
